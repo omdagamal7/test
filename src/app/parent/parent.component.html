@@ -1,0 +1,19 @@
+<h1>{{ay7aga}}</h1>
+<button (click)="ay7aga = 'asdad'"> test</button>
+<app-child [ay7aga]="ay7aga" (emit)="sayHi($event)"></app-child>
+<table>
+  <thead>
+    <tr>
+      <td>id</td>
+      <td>title</td>
+      <td>body</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of dataList">
+      <td>{{data.id}}</td>
+      <td>{{data.title}}</td>
+      <td>{{data.body}}</td>
+    </tr>
+  </tbody>
+</table>
